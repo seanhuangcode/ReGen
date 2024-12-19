@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReGen</title>
+  <link rel="icon" type="image/jpg" href="{% static 'myapp/images/logo.png' %}">
+  <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+
+  <style>
+    @font-face {
+        font-family: 'Parkinsans';
+        src: url('/static/myapp/fonts/Parkinsans-VariableFont_wght.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    body {
+      font-family: Parkinsans, Arial, sans-serif;
+      background-color: #f4f4f9;
+      background-image: url('/static/myapp/images/italian-food-ingredients.jpg');
+      background-size: cover;   
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column; 
+    }
+    
+    .navbar {
+        z-index: 10;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(233, 238, 217);  
+        padding: 10px 20px;
+        max-height: 80px; 
+        width: 100%;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navbar li {
+        padding: 10px;
+    }
+    
+    .navbar a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    
+    .navbar li:hover {
+        text-decoration: underline;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: calc(100vh - 60px); 
+        gap: 30px;
+    }
+    
+    .cool-button {
+        font-family: 'Parkinsans', sans-serif;
+        padding: 20px 40px;
+        font-size: 27px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+        border: none;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .cool-button.light-green {
+        background: linear-gradient(145deg, #8bc34a, #4caf50);
+    }
+    
+    .cool-button.light-green:hover {
+        background: linear-gradient(145deg, #a5d6a7, #66bb6a);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 16px 30px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+    }
+    
+    .cool-button.dark-green {
+        background: linear-gradient(145deg, #2e7d32, #388e3c);
+    }
+    
+    .cool-button.dark-green:hover {
+        background: linear-gradient(145deg, #66bb6a, #43a047);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 16px 30px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+    }
+    
+    @media (max-width: 768px) {
+        .cool-button {
+            font-size: 22px;
+            padding: 15px 30px;
+        }
+    
+        .button-container {
+            flex-direction: column; 
+            gap: 20px; 
+            height: calc(100vh - 60px);
+        }
+    }
+
+  </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a><img src="{% static 'myapp/images/logo.png' %}" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'choice' %}">Recipe Generator</a></li>
+        </ul> 
+    </nav>
+
+    <div class="button-container">
+        <a href="{% url 'take_image' %}">
+        <button class="cool-button light-green">Generate With Camera</button>
+        </a>
+
+        <a href="{% url 'take_image' %}">
+            <button class="cool-button light-green">Generate With Image Upload</button>
+        </a>
+
+        <a href="{% url 'text_response' %}">
+        <button class="cool-button dark-green">Generate With Text</button>
+        </a>
+
+    </div>
+
+</body>
+</html>
