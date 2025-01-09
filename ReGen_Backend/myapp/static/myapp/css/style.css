@@ -16,11 +16,11 @@
 
 @keyframes flyInBottom {
     0% {
-        transform: translateY(100%); /* Start off-screen from the bottom */
+        transform: translateY(100%);
         opacity: 0;
     }
     100% {
-        transform: translateY(0); /* Fly in to the normal position */
+        transform: translateY(0); 
         opacity: 1;
     }
 }
@@ -256,116 +256,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; 
-}
-
-#start-video-btn {
-    font-family: 'Parkinsans', Helvetica, sans-serif;
-    border: none;
-    margin: auto;
-    z-index: 9;
-    font-size: 4rem;
-    transform: translate(-40%, 0); 
-    margin-top: 70%;
-    background-color: transparent;
-
-}
-
-#start-video-btn:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-#retake-photo-btn {
-    font-family: 'Parkinsans', Helvetica, sans-serif;
-    border: none;
-    margin: auto;
-    z-index: 9;
-    font-size: 4rem;
-    transform: translate(-40%, 0); 
-    margin-top: 67%;
-    background-color: transparent;
-}
-
-#retake-photo-btn:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-
-#take-photo-btn:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-#take-photo-btn {
-    background-color: transparent;
-    font-family: 'Parkinsans', Helvetica, sans-serif;
-    z-index: 10;
-    border: none;
-    font-size: 4rem;
-    transform: translate(-40%, 0); 
-    margin-top: 80%
-}
-
-
-.button_div { 
-    z-index: 10;
-    position: absolute;
-    left: 69.5%;
-}
-
-.parallax-background2 {
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/static/myapp/images/recipe photo.webp') no-repeat center center;
-    background-size: cover;
-    transform-origin: center;
-    will-change: transform;
-}
-
-#upload-image {
-    transform: translate(-17%, 0)
-}
-
-#gen {
-    background-color: transparent;
-    transform: translate(-35%, 0);
-    margin-top: 40px;
-    text-decoration: none;
-    font-family: 'Parkinsans', Helvetica, sans-serif;
-    font-size: 4rem;
-    border-radius: 5px;
-    padding: 10px 10px;
-    border: none;
-
-}
-
-#gen:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.vid_container {
-    z-index: 11;
-    position: absolute;
-    margin-left: 40px;
-    width: 700px;
-    height: 540px;
-    transform: translate(0, 50px);
-}
-
-#video {
-    margin: 30px 30px;
-    border-radius: 10px;
-}
-
-#canvas {
-    display: inline;
-    position: absolute;
-    transform: translate(-104.75%, 30px);
-    border-radius: 10px;
 }

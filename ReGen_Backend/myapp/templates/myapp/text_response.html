@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReGen</title>
+  <link rel="icon" type="image/jpg" href="{% static 'myapp/images/logo.png' %}">
+  <link rel="stylesheet" href="{% static 'myapp/css/text_response.css' %}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a><img src="{% static 'myapp/images/logo.png' %}" alt="Logo"></a>
+        </div>
+        <ul> 
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'choice' %}">Recipe Generator</a></li>
+        </ul> 
+    </nav>
+
+    <div class="container">
+    <form id="responseForm">
+        <textarea id="responseText" name="response" placeholder="List your ingredients!" rows="1" cols="50"></textarea>
+        <br>
+        <button class="button" onclick="sendResponse()">Submit!</button>
+    </form>
+    </div>
+
+    <script src="{% static '/myapp/js/text_response.js' %}"></script>
+
+</body>
+</html>

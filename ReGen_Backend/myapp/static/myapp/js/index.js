@@ -72,17 +72,3 @@ function dataURItoBlob(dataURI) {
   }
   return new Blob([ab], { type: mimeString });
 }
-
-function isCanvasBlank(canvas) {
-  const context = canvas.getContext('2d');
-  const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-  
-  for (let i = 0; i < imageData.data.length; i += 4) {
-    const alpha = imageData.data[i + 3];
-    if (alpha !== 0) {
-      return false;
-    }
-  }
-  
-  return true;
-}
