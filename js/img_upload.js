@@ -72,7 +72,7 @@ gen.addEventListener('click', function () {
                     sessionStorage.setItem('imageData', imageData); 
                     sessionStorage.setItem('recipeData', JSON.stringify(recipe));
 
-                    window.location.href = '../html/recipe.html';
+                    window.location.href = '/recipe.html';
                 } else {
                     console.error('Invalid response format:', data);
                 }

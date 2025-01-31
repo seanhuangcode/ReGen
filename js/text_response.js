@@ -39,7 +39,7 @@ function sendResponse(event) {
             const recipe = data.candidates[0].content.parts[0].text;
             sessionStorage.setItem('recipeData', JSON.stringify(recipe)); 
 
-            window.location.href = '../html/recipe.html';
+            window.location.href = '/recipe.html';
 
         } else {
             console.error('Invalid response format:', data);
