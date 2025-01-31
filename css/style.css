@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('../fonts/Parkinsans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@media (max-width: 600px) {
+    #take-photo-btn {
+        bottom: 10px; 
+        right: 10px;
+        font-size: 1.5rem; 
+        padding: 10px 10px;
+    }
+}
+
+@keyframes flyInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Parkinsans, Helvetica, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/fridge.jpg') no-repeat center center;
+    background-size: cover;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    text-align: center;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.content h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    animation: flyInBottom 0.7s ease forwards; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1), 
+    0 0 30px rgba(255, 255, 255, 1),   
+    0 0 45px rgba(255, 255, 255, 1),  
+    0 0 60px rgba(255, 255, 255, 1), 
+    0 0 75px rgba(255, 255, 255, 1),   
+    0 0 90px rgba(255, 255, 255, 1);    
+}
+
+.content p {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.6); 
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: flyInBottom 1s ease forwards; 
+}
+
+.box {
+    width: 200px;       
+    height: 150px;      
+    background-color: #3498db; 
+    border: 2px solid #2980b9; 
+    border-radius: 10px; 
+    padding: 20px;     
+    margin: 20px;        
+}
+
+.navbar {
+    gap: 10px; 
+    z-index: 10;
+    top: 0;
+    position: sticky;
+    display: flex;            
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;       
+    flex: left;
+    background-color: rgb(233, 238, 217);      
+    padding: 10px 20px;          
+    max-height: 80px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    display:block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+    padding: 10px
+
+}
+
+.navbar li:hover{
+    text-decoration:underline;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    justify-content: left;
+    padding-left: 100px;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color:rgb(255, 241, 219);
+}
+
+.fly-in-box {
+    width: 300px;
+    height: 420px;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 1;
+    background-image: url('../images/fruit_tart.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    animation: flyInBottom 1s ease forwards; 
+    overflow: hidden;
+    text-align: center;
+}
+.text_container{
+    margin-left: 50px;
+    width: 850px;
+    padding: 10px 10px;
+
+}
+h2 {
+    text-align: center;
+    transform: translate(-40%, 0);
+    padding: 0px 20px;
+    margin-bottom: 20px;
+
+}
+
+.navbar .logo img{
+    align-items: top;
+    position: sticky;
+    top: 0;
+    margin-top: 9px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+}
+
+.container h1{
+    margin-left: 25px
+}
+
+.container p{
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    justify-content: flex-end;
+    padding-left: 50px;
+    padding-right: 80px;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color:rgb(241, 243, 194);
+}
+
+.fly-in-box2 {
+    width: 420px;
+    height: 420px;
+    display: fixed;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 1;
+    background-image: url('../images/chicken_pasta.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    animation: flyInBottom 1s ease forwards; 
+    overflow: hidden;
+    text-align: center;
+}
+
+.container2 p{
+    margin-right: 70px;
+}
+
+footer {
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 15px 0; 
+    position: relative; 
+    bottom: 0;
+    width: 100%; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}

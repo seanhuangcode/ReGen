@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('../fonts/Parkinsans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+
+@keyframes flyInBottom {
+    0% {
+        transform: translateY(100%) translateX(-43.25%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0) translateX(-43.25%); 
+        opacity: 1; 
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Parkinsans, Helvetica, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    gap: 10px; 
+    z-index: 10;
+    top: 0;
+    position: sticky;
+    display: flex;            
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;       
+    flex: left;
+    background-color: rgb(233, 238, 217);      
+    padding: 10px 20px;          
+    max-height: 80px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    display:block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+    padding: 10px
+
+}
+
+.navbar li:hover{
+    text-decoration:underline;
+}
+
+.navbar .logo img{
+    align-items: top;
+    position: sticky;
+    top: 0;
+    margin-top: 9px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+}
+
+#start-video-btn, #retake-photo-btn, #take-photo-btn {
+    font-family: 'Parkinsans', Helvetica, sans-serif;
+    background-color: black;
+    border: none;
+    border-radius: 40px;
+    z-index: 9;
+    font-size: 4rem;
+    padding: 12px;
+    margin-top: 42vh;
+    transform: translate(-43.25%, 0);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#start-video-btn:hover, #retake-photo-btn:hover, #take-photo-btn:hover {
+    cursor: pointer;
+}
+
+#start-video-btn {
+    animation: flyInBottom 1.5s;
+    background-color: #729762;
+    width: 500px;
+}
+
+#retake-photo-btn {
+    background-color: #658147;
+    width: 550px;
+}
+
+#take-photo-btn {
+    background-color: #597445;
+    width: 450px;
+}
+
+
+#start-video-btn:hover {
+    animation: flyInBottom 1.5s;
+    background-color: #83ad71;
+}
+
+#retake-photo-btn:hover {
+    background-color: #779853;
+}
+
+#take-photo-btn:hover {
+    background-color: #719357;
+}
+
+
+.button_div { 
+    z-index: 10;
+    position: absolute;
+    left: 69.5%;
+}
+
+.parallax-background2 {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/recipe photo.webp') no-repeat center center;
+    background-size: cover;
+    transform-origin: center;
+    will-change: transform;
+}
+
+#upload-image {
+    transform: translate(-17%, 0)
+}
+
+#gen {
+    text-decoration: none;
+    font-family: 'Parkinsans', Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 100px;
+    background-color: rgb(233, 137, 137);
+    border: none;
+    border-radius: 40px;
+    z-index: 9;
+    font-size: 4rem;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+    transform: translate(-43.25%, 0);
+    border: none;
+    animation: flyInBottom 2s ease;
+
+}
+
+#gen:hover {
+    cursor: pointer;
+    background-color:rgb(242, 151, 151);
+}
+
+.vid_container {
+    z-index: 11;
+    position: absolute;
+    margin-left: 40px;
+    width: 23.148vh;
+    height: 27.49vh;
+    transform: translate(0, 50px);
+}
+
+#video {
+    margin: 30px 30px;
+    border-radius: 10px;
+}
+
+#canvas {
+    display: inline;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#imagePreview {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-104.75%, 30px);
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+    z-index: 12;
+}

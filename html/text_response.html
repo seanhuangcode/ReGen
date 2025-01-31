@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReGen</title>
+  <link rel="icon" type="image/jpg" href="../images/logo.png">
+  <link rel="stylesheet" href="../css/text_response.css">
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="choice.html">Recipe Generator</a></li>
+        </ul> 
+    </nav>
+
+    <div class="container">
+    <form id="responseForm">
+        <textarea id="responseText" name="response" placeholder="List your ingredients!" rows="1" cols="50"></textarea>
+        <br>
+        <button type="submit" id="gen" class="button" onclick="sendResponse()">Generate!</button>
+    </form>
+    </div>
+
+    <script src="../js/text_response.js"></script>
+
+</body>
+</html>

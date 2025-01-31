@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReGen</title>
+    <link rel="stylesheet" href="../css/img_upload.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.png">
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="logo">
+            <a><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="choice.html">Recipe Generator</a></li>
+        </ul>
+    </nav>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <h1>Upload Image</h1>
+        
+        <input type="file" id="img_upload" accept="image/*">
+
+        <br>
+        <button id="gen">Generate!</button>
+
+        <br>
+
+        <h2>Image Preview</h2>
+
+        <div class="container2">
+            <img id="preview" alt="No Image Uploaded">
+        </div>
+    </div>
+
+    <script src="../js/img_upload.js"></script>
+
+</body>
+</html>

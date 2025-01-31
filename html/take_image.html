@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReGen</title>
+    <link rel="stylesheet" href="../css/take_image.css">
+    <link rel="icon" type="image/jpg" href="../images/logo.png">
+</head>
+<body>
+ 
+    <nav class="navbar">
+        <div class="logo">
+            <a><img src="../images/logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="choice.html">Recipe Generator</a></li>
+        </ul>
+    </nav>
+
+    <div class="parallax-background2"></div>
+    <section class="button_container">
+
+        <div class="button_div">
+            <button id="start-video-btn">Start Camera</button>
+            <button id="take-photo-btn" style="display: none;">Take Picture</button>
+            <button id="retake-photo-btn" style="display: none;"> Retake Picture </button>
+            <br>
+            <a>
+                <button id="gen"> Generate! </button>
+            </a>
+        </div>
+
+        <div class="vid_container"> 
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas"></canvas>
+        </div>
+    </section> 
+
+
+    <script src="../js/index.js"></script>
+    
+</body>
+</html> 

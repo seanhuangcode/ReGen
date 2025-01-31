@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Parkinsans';
+    src: url('../fonts/Parkinsans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes flyInBottom {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: Parkinsans, Arial, sans-serif;
+  background-image: url('../images/italian-food-ingredients.jpg');
+  background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column; 
+}
+
+.navbar {
+    gap: 10px; 
+    z-index: 10;
+    top: 0;
+    position: sticky;
+    display: flex;            
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;       
+    flex: left;
+    background-color: rgb(233, 238, 217);      
+    padding: 10px 20px;          
+    max-height: 80px;
+}
+
+.navbar ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    display:block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+    padding: 10px
+
+}
+
+.navbar li:hover{
+    text-decoration:underline;
+}
+
+.navbar .logo img{
+    align-items: top;
+    position: sticky;
+    top: 0;
+    margin-top: 9px;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: calc(100vh - 60px); 
+    gap: 30px;
+}
+
+.cool-button {
+    font-family: 'Parkinsans', sans-serif;
+    padding: 20px 40px;
+    font-size: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    animation: flyInBottom 1s ease forwards; 
+    border: none;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cool-button.light-green {
+    background: linear-gradient(145deg, #8bc34a, #4caf50);
+}
+
+.cool-button.light-green:hover {
+    background: linear-gradient(145deg, #a5d6a7, #66bb6a);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 16px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+.cool-button.dark-green {
+    background: linear-gradient(145deg, #2e7d32,rgb(26, 121, 31));
+}
+
+.cool-button.dark-green:hover {
+    background: linear-gradient(145deg, #66bb6a, #43a047);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 16px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+.cool-button.light-green2 {
+    background: linear-gradient(145deg,rgb(21, 194, 30),rgb(75, 154, 79));
+}
+
+.cool-button.light-green2:hover {
+    background: linear-gradient(145deg,rgb(122, 223, 127),rgb(71, 202, 78));
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 16px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    .cool-button {
+        font-size: 22px;
+        padding: 15px 30px;
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 20px; 
+        height: calc(100vh - 60px);
+    }
+}
