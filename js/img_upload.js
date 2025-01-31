@@ -2,7 +2,7 @@ const upload = document.getElementById("img_upload");
 const gen = document.getElementById("gen");
 let file = null;
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.GEMINI_API_KEY;
 
 upload.addEventListener("change", function(event) {
     file = event.target.files[0]; 

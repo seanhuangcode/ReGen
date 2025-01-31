@@ -7,7 +7,7 @@ const genBtn = document.getElementById('gen');
 const imgUpload = document.getElementById('upload-image');
 let stream;
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.GEMINI_API_KEY
 
 startVideoBtn.addEventListener('click', function () {
   navigator.mediaDevices.getUserMedia({ video: true })

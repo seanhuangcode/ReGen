@@ -1,6 +1,6 @@
 const gen = document.getElementById('gen');
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.GEMINI_API_KEY;
 
 function sendResponse(event) {
     if (event){
