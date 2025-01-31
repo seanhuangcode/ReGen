@@ -7,6 +7,8 @@ const genBtn = document.getElementById('gen');
 const imgUpload = document.getElementById('upload-image');
 let stream;
 
+const API_KEY = process.env.API_KEY;
+
 startVideoBtn.addEventListener('click', function () {
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(s => {
@@ -59,7 +61,6 @@ retakeBtn.addEventListener('click', function () {
 
 genBtn.addEventListener('click', function () {
   const imageData = canvas.toDataURL('image/png');
-  const API_KEY = '';
 
   const base64Image = imageData.split(',')[1];
 

@@ -1,11 +1,12 @@
 const gen = document.getElementById('gen');
 
+const API_KEY = process.env.API_KEY;
+
 function sendResponse(event) {
     if (event){
         event.preventDefault();
     }
     const responseText = document.getElementById("responseText").value;
-    const API_KEY = '';
 
     gen.textContent = 'Generating...';
 
