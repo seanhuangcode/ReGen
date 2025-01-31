@@ -26,7 +26,7 @@ gen.addEventListener('click', function () {
         
         reader.onload = function(e) {
             const imageData = e.target.result; 
-            const API_KEY = 'AIzaSyD7rQq_zCe6BoDoeDJjVBEAlVc3GkLoFFA';
+            const API_KEY = '';
 
             const blob = dataURItoBlob(imageData);
 

@@ -59,7 +59,7 @@ retakeBtn.addEventListener('click', function () {
 
 genBtn.addEventListener('click', function () {
   const imageData = canvas.toDataURL('image/png');
-  const API_KEY = 'AIzaSyD7rQq_zCe6BoDoeDJjVBEAlVc3GkLoFFA';
+  const API_KEY = '';
 
   const base64Image = imageData.split(',')[1];
 

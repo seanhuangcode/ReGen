@@ -5,7 +5,7 @@ function sendResponse(event) {
         event.preventDefault();
     }
     const responseText = document.getElementById("responseText").value;
-    const API_KEY = 'AIzaSyD7rQq_zCe6BoDoeDJjVBEAlVc3GkLoFFA';
+    const API_KEY = '';
 
     gen.textContent = 'Generating...';
 
