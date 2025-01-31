@@ -4,15 +4,15 @@
     font-weight: normal;
     font-style: normal;
 }
- 
+
 @keyframes flyInBottom {
     0% {
-        transform: translateY(100%); 
-        opacity: 0; 
+        transform: translateY(100%) translateX(-50%);
+        opacity: 0;
     }
     100% {
-        transform: translateY(0); 
-        opacity: 1; 
+        transform: translateY(0) translateX(-50%);
+        opacity: 1;
     }
 }
 
@@ -25,51 +25,48 @@
 body {
     font-family: Parkinsans, Helvetica, sans-serif;
     line-height: 1.6;
-    height: 100%;
-    overflow: hidden;
+    min-height: 100vh;
 }
 
 .navbar {
-    gap: 10px; 
+    gap: 10px;
     z-index: 10;
     top: 0;
     position: sticky;
-    display: flex;            
+    display: flex;
     width: 100%;
-    justify-content: space-between; 
-    align-items: center;       
+    justify-content: space-between;
+    align-items: center;
     flex: left;
-    background-color: rgb(233, 238, 217);      
-    padding: 10px 20px;          
+    background-color: rgb(233, 238, 217);
+    padding: 10px 20px;
     max-height: 80px;
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
     text-decoration: none;
     display: block;
     margin: 0px;
-
 }
 
-.navbar a{
+.navbar a {
     color: black;
     text-decoration: none;
-    display:block;
+    display: block;
     text-align: center;
 }
 
-.navbar li{
+.navbar li {
     float: left;
-    padding: 10px
-
+    padding: 10px;
 }
 
-.navbar li:hover{
-    text-decoration:underline;
+.navbar li:hover {
+    text-decoration: underline;
 }
 
-.navbar .logo img{
+.navbar .logo img {
     align-items: top;
     position: sticky;
     top: 0;
@@ -80,7 +77,7 @@ body {
 }
 
 .background {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 0;
     left: 0;
@@ -96,20 +93,23 @@ body {
     background-color: rgba(196, 214, 155, 0.9);
     backdrop-filter: blur(10px);
     position: absolute;
-    top: 20%; 
-    left: 45%;
-    transform: translateX(-50%); 
+    top: 20%;
+    left: 65%; /* Increased from 45% to 65% */
+    transform: translateX(-50%);
     border-radius: 30px;
-    height: 70%;
+    min-height: 70vh;
     width: 45%;
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.3);
     text-align: center;
     justify-content: center;
     animation: flyInBottom 1.5s ease forwards;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 75vh;
 }
 
 .container h1 {
-    margin: 20px;
+    margin: 20px auto;
     width: 90%;
     background-color: #cbe68b;
     border-radius: 30px;
@@ -126,6 +126,25 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.container3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.preview-section {
+    flex: 1;
+    text-align: center;
+}
+
+.button-section {
+    flex: 1;
+    text-align: center;
+}
+
 #gen {
     background-color: #819d40;
     font-family: 'Parkinsans', sans-serif;
@@ -133,8 +152,8 @@ body {
     padding: 20px;
     margin: 20px;
     border-radius: 50px;
-    cursor: pointer; 
-    position: relative; 
+    cursor: pointer;
+    position: relative;
     border: none;
     color: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -149,4 +168,64 @@ body {
     display: flex;
     border-radius: 10px;
     justify-content: center;
+}
+
+#preview {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        left: 50%; /* Center on mobile */
+        min-height: auto;
+        max-height: 80vh;
+        top: 15%;
+    }
+
+    .container3 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-section,
+    .preview-section {
+        width: 100%;
+    }
+
+    #gen {
+        font-size: 22px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #img_upload {
+        padding: 30px;
+    }
+
+    #preview {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .container {
+        top: 12%;
+    }
+
+    #gen {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+        margin: 15px auto;
+        width: 85%;
+    }
 }

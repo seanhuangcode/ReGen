@@ -80,6 +80,7 @@ body {
 }
 
 #start-video-btn, #retake-photo-btn, #take-photo-btn {
+    position: relative;
     font-family: 'Parkinsans', Helvetica, sans-serif;
     background-color: black;
     border: none;
@@ -99,17 +100,17 @@ body {
 #start-video-btn {
     animation: flyInBottom 1.5s;
     background-color: #729762;
-    width: 500px;
+    width: 35vw;
 }
 
 #retake-photo-btn {
     background-color: #658147;
-    width: 550px;
+    width: 37vw;
 }
 
 #take-photo-btn {
     background-color: #597445;
-    width: 450px;
+    width: 30vw;
 }
 
 
@@ -167,6 +168,7 @@ body {
     transform: translate(-43.25%, 0);
     border: none;
     animation: flyInBottom 2s ease;
+    max-width: 35vw;
 
 }
 
@@ -179,7 +181,7 @@ body {
     z-index: 11;
     position: absolute;
     margin-left: 40px;
-    width: 23.148vh;
+    width: 23.148vw;
     height: 27.49vh;
     transform: translate(0, 50px);
 }

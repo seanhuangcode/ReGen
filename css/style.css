@@ -214,6 +214,10 @@ h2 {
     background-color:rgb(241, 243, 194);
 }
 
+.container3 {
+    flex: left;
+
+}
 .fly-in-box2 {
     width: 420px;
     height: 420px;
