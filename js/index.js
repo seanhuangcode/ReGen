@@ -7,8 +7,6 @@ const genBtn = document.getElementById('gen');
 const imgUpload = document.getElementById('upload-image');
 let stream;
 
-const API_KEY = process.env.GEMINI_API_KEY
-
 startVideoBtn.addEventListener('click', function () {
   navigator.mediaDevices.getUserMedia({ video: true })
     .then(s => {
@@ -66,7 +64,7 @@ genBtn.addEventListener('click', function () {
 
   genBtn.textContent = 'Generating...';
 
-  fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
+  fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyD7rQq_zCe6BoDoeDJjVBEAlVc3GkLoFFA`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
