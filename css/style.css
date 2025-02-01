@@ -190,9 +190,10 @@ body {
     text-align: center;
 }
 .text_container{
+    margin: 2vw;
     width: 90%;
     padding: 10px 10px;
-    font-size: clamp(1rem, 1.3vw, 1.5vw);
+    font-size: clamp(1rem, 1.1vw, 1.3vw);
 
 }
 h2 {
@@ -227,7 +228,7 @@ h2 {
     display: flex;
     padding-top: 10vh;
     justify-content: flex-end;
-    padding-left: 7vw;
+    padding-left: 4vw;
     padding-right: 7vw;
     align-items: center;
     padding-bottom: 10vh;
