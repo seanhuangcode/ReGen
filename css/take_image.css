@@ -162,7 +162,7 @@ body {
     border-radius: 40px;
     z-index: 9;
     width: 35vw;
-    font-size: clamp(2rem, 3.5vw, 5rem); 
+    font-size: clamp(2rem, 4vw, 5rem); 
     padding: clamp(0.5rem, 1vw, 1.5rem);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transform: translate(-43.25%, 0);

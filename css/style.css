@@ -165,16 +165,16 @@ body {
 .container {
     width: 100%;
     display: flex;
-    padding-top: 100px;
+    padding-top: 10vh;
     justify-content: left;
-    padding-left: 100px;
+    padding-left: 7vw;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 10vh;
     background-color:rgb(255, 241, 219);
 }
 
 .fly-in-box {
-    width: 300px;
+    width: 30vw;
     height: 420px;
     display: fixed;
     justify-content: center;
@@ -190,8 +190,7 @@ body {
     text-align: center;
 }
 .text_container{
-    margin-left: 50px;
-    width: 850px;
+    width: 90%;
     padding: 10px 10px;
 
 }
@@ -225,12 +224,12 @@ h2 {
 .container2 {
     width: 100%;
     display: flex;
-    padding-top: 100px;
+    padding-top: 10vh;
     justify-content: flex-end;
-    padding-left: 50px;
-    padding-right: 80px;
+    padding-left: 7vw;
+    padding-right: 7vw;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 10vh;
     background-color:rgb(241, 243, 194);
 }
 
@@ -239,7 +238,7 @@ h2 {
 
 }
 .fly-in-box2 {
-    width: 420px;
+    width: 40vw;
     height: 420px;
     display: fixed;
     justify-content: flex-end;
