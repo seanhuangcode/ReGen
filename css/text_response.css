@@ -106,7 +106,7 @@ textarea {
     max-width: 75vw;
     height: 12vh;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px; 
     border: 1px solid #ccc;
     font-size: 50px; 
     border-radius: 50px;
@@ -138,4 +138,10 @@ textarea {
 
 #responseText::placeholder {
     font-size: clamp(2rem, 3vw, 3vw);
+
 }
+
+#responseForm {
+    overflow: hidden;
+}
+
