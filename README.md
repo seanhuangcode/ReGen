@@ -1,6 +1,7 @@
 # 🌟 ReGen
 
-<img width="1480" alt="Screenshot 2025-01-30 at 8 20 56 PM" src="https://github.com/user-attachments/assets/68128a03-6f94-45df-8ec5-d1e1f01de366" />
+<img width="1502" alt="Screenshot 2025-01-31 at 7 17 48 PM" src="https://github.com/user-attachments/assets/d7d298c3-4ce8-440c-8657-7c6d3d439126" />
+
 
 ## 📌 Overview
 ReGen is an AI recipe generator that generates healthy and simple recipes via text, image upload, or camera. It is conveinient and easy to use.
