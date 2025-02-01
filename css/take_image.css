@@ -78,7 +78,6 @@ body {
     max-height: 50px;
     border-radius: 5px;
 }
-
 #start-video-btn, #retake-photo-btn, #take-photo-btn {
     position: relative;
     font-family: 'Parkinsans', Helvetica, sans-serif;
@@ -86,12 +85,14 @@ body {
     border: none;
     border-radius: 40px;
     z-index: 9;
-    font-size: 4rem;
-    padding: 12px;
+    width: 35vw;
+    font-size: clamp(2rem, 4vw, 6rem); 
+    padding: clamp(0.5rem, 1vw, 1.5rem);
     margin-top: 42vh;
     transform: translate(-43.25%, 0);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
 
 #start-video-btn:hover, #retake-photo-btn:hover, #take-photo-btn:hover {
     cursor: pointer;
@@ -155,21 +156,18 @@ body {
     text-decoration: none;
     font-family: 'Parkinsans', Helvetica, sans-serif;
     border-radius: 5px;
-    padding: 10px 10px;
-    margin-top: 100px;
+    margin-top: 8vh;
     background-color: rgb(233, 137, 137);
     border: none;
     border-radius: 40px;
     z-index: 9;
-    font-size: 4rem;
-    padding: 20px;
+    width: 35vw;
+    font-size: clamp(2rem, 3.5vw, 5rem); 
+    padding: clamp(0.5rem, 1vw, 1.5rem);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    
     transform: translate(-43.25%, 0);
     border: none;
     animation: flyInBottom 2s ease;
-    max-width: 35vw;
-
 }
 
 #gen:hover {
