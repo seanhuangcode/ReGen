@@ -174,8 +174,8 @@ body {
 }
 
 .fly-in-box {
-    width: 30vw;
-    height: 420px;
+    width: 20vw;
+    height: 40vh;
     display: fixed;
     justify-content: center;
     align-items: center;
@@ -192,6 +192,7 @@ body {
 .text_container{
     width: 90%;
     padding: 10px 10px;
+    font-size: clamp(1rem, 1.3vw, 1.5vw);
 
 }
 h2 {
@@ -238,8 +239,8 @@ h2 {
 
 }
 .fly-in-box2 {
-    width: 40vw;
-    height: 420px;
+    width: 26vw;
+    height: 40vh;
     display: fixed;
     justify-content: flex-end;
     align-items: center;
