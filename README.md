@@ -23,6 +23,7 @@ ReGen is an AI recipe generator that generates healthy and simple recipes via te
 - **JavaScript (Fetch API)** for interacting with Gemini API
 
 ## Screenshots
+<img width="1504" alt="Screenshot 2025-01-31 at 7 38 37 PM" src="https://github.com/user-attachments/assets/7cb9b229-05a7-4cba-ab99-5e5312dd22ac" />
 
 <img width="1505" alt="Screenshot 2025-01-30 at 8 29 22 PM" src="https://github.com/user-attachments/assets/a61e734f-fa67-493f-b4ce-661282f6ec3d" />
 <img width="1500" alt="Screenshot 2025-01-30 at 8 29 39 PM" src="https://github.com/user-attachments/assets/8d37fb3d-826b-491b-a509-ab4a6c21e600" />
